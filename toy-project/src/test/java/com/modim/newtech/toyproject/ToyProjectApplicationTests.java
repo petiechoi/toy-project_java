@@ -1,10 +1,10 @@
-package com.modim.newtech.webcommunity;
+package com.modim.newtech.toyproject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebCommunityApplicationTests {
+class ToyProjectApplicationTests {
 
 	@Test
 	void contextLoads() {

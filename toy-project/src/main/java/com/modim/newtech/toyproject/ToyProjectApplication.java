@@ -1,12 +1,12 @@
-package com.modim.newtech.webcommunity;
+package com.modim.newtech.toyproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebCommunityApplication {
+public class ToyProjectApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(WebCommunityApplication.class, args);
+		SpringApplication.run(ToyProjectApplication.class, args);
 	}
 
 }
