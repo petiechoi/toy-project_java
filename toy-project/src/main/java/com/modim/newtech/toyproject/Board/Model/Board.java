@@ -2,24 +2,24 @@ package com.modim.newtech.toyproject.Board.Model;
 
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@DynamicInsert
 public class Board {
 
     @Id
     @Column(nullable=false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment
     private Long id;
 
     @ColumnDefault("0")
-    @Column(nullable = true)
     private Integer hit;
 
     @Column(nullable=false)
