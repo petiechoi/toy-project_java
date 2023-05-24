@@ -15,7 +15,7 @@ public class BoardRestController {
     private final BoardService boardService;
 
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value="/{id}")
     public ResponseEntity<Board> getBoard(@PathVariable(value="id")Long id){
         return ResponseEntity.ok(boardService.getBoard(id));
 
