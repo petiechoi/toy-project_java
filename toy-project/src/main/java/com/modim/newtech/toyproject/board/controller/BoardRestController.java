@@ -1,9 +1,8 @@
-package com.modim.newtech.toyproject.Board.Controller;
+package com.modim.newtech.toyproject.board.controller;
 
-import com.modim.newtech.toyproject.Board.Dto.BoardDto;
-import com.modim.newtech.toyproject.Board.Model.Board;
-import com.modim.newtech.toyproject.Board.Service.BoardService;
-import lombok.AllArgsConstructor;
+import com.modim.newtech.toyproject.board.dto.BoardDto;
+import com.modim.newtech.toyproject.board.model.Board;
+import com.modim.newtech.toyproject.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

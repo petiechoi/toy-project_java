@@ -1,6 +1,6 @@
-package com.modim.newtech.toyproject.Board.Dto;
+package com.modim.newtech.toyproject.board.dto;
 
-import com.modim.newtech.toyproject.Board.Model.Board;
+import com.modim.newtech.toyproject.board.model.Board;
 import lombok.*;
 
 

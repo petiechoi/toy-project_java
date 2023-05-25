@@ -1,9 +1,9 @@
-package com.modim.newtech.toyproject.Board.Service;
+package com.modim.newtech.toyproject.board.service;
 
 
-import com.modim.newtech.toyproject.Board.Dto.BoardDto;
-import com.modim.newtech.toyproject.Board.Model.Board;
-import com.modim.newtech.toyproject.Board.Repository.BoardRepository;
+import com.modim.newtech.toyproject.board.dto.BoardDto;
+import com.modim.newtech.toyproject.board.model.Board;
+import com.modim.newtech.toyproject.board.repository.BoardRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
