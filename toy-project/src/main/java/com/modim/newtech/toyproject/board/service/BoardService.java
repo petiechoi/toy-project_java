@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class BoardService {
@@ -15,6 +16,11 @@ public class BoardService {
     // @Autowird 사용 X -> RequiredArgsConstructor로 생성되는 생성자로 주입받기 위해 final 적어야함.
     private final BoardRepository boardRepository;
 
+    // 게시물 리스트 조회
+    @Transactional
+    public List<Board> getBoardList(){
+        return boardRepository.findAll();
+    }
     // 게시물 조회
     @Transactional
     public Board getBoard(Long id) {

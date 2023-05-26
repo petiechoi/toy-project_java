@@ -22,7 +22,7 @@
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h2>도서관리 목록</h2>
-        <p class="lead">2023년 05월 25일 현황</p>
+        <p class="lead" th:text="${#calendars.format(#calendars.createNow(), 'yyyy년 MM월 dd일 현황')}"></p>
         <p class="mb-0">[대여] 대여 신청 및 승인 후 가능 </p>
         <p>[반납] (관리자 전용) 문의 바랍니다.</p>
     </div>
@@ -33,31 +33,15 @@
         <th>번호</th>
         <th>제목</th>
         <th>작성자</th>
-        <th>날짜</th>
         <th>조회수</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>1</td>
-        <td>부트스트랩이이 이이이이이잉</td>
-        <td>alice</td>
-        <td>2023.05.25</td>
-        <td>20</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>부트스트랩</td>
-        <td>alice</td>
-        <td>2023.05.25</td>
-        <td>203</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>부트스트랩</td>
-        <td>alice</td>
-        <td>2023.05.25</td>
-        <td>14</td>
+    <tr th:each="board : ${boardList}">
+        <td th:text="${board.id}"></td>
+        <td th:text="${board.title}"></td>
+        <td th:text="${board.author}"></td>
+        <td th:text="${board.hit}"></td>
     </tr>
     </tbody>
 </table>
