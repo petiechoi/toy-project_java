@@ -26,22 +26,22 @@ public class BoardController{
     }
 
 
-    @GetMapping("/board/{id}")
-    public String string(){
-        return "edit";
-    }
+//    @GetMapping("/board/{id}")
+//    public String string(){
+//        return "edit";
+//    }
 
-    // 글 작성
-    @GetMapping("/board/write")
-    public String boardWrite(){
-        return "write";
-    }
-
-    // 글 수정
-    @GetMapping("/board/edit")
-    public String boardEdit(){
-        return "edit";
-    }
+//    // 글 작성
+//    @GetMapping("/board/write")
+//    public String boardWrite(){
+//        return "write";
+//    }
+//
+//    // 글 수정
+//    @GetMapping("/board/edit")
+//    public String boardEdit(){
+//        return "edit";
+//    }
 
 
 }

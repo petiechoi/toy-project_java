@@ -34,4 +34,9 @@ public class Board {
         this.title = title;
         this.content = content;
     }
+
+    public void increaseHit()
+    {
+        this.hit += 1;
+    }
 }
