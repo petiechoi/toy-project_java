@@ -14,11 +14,10 @@ public class BoardRestController {
     private final BoardService boardService;
 
 
-    @RequestMapping(method = RequestMethod.GET, value="/{id}")
-    public ResponseEntity<Board> getBoard(@PathVariable(value="id")Long id){
-        return ResponseEntity.ok(boardService.getBoard(id));
-
-    }
+//    @RequestMapping(method = RequestMethod.GET, value="/{id}")
+//    public ResponseEntity<Board> getBoard(@PathVariable(value="id")Long id){
+//        return ResponseEntity.ok(boardService.getBoard(id));
+//    }
 
     @RequestMapping(method=RequestMethod.POST)
     public Long createBoard(@RequestBody BoardDto boardDto){

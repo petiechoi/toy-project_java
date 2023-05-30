@@ -21,6 +21,8 @@ dependencies {
 	//mariadb
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+
 	//implementation 'org.springframework.boot:spring-boot-starter-security'
 	//implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 

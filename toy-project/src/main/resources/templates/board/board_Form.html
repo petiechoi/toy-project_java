@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>게시판 - 글쓰기</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<section class="container">
+  <header th:insert="common/header.html"></header>
+    <main class="py-md-5 pr-5 pl-5">
+<!--        <form action="/post" method="post">-->
+        <form th:action="@{/}" method="post">
+
+            <div class="form-group row">
+                <label for="inputTitle" class="col-sm-2 col-form-label"><strong>제목</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" name="title" class="form-control" id="inputTitle"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputAuthor" class="col-sm-2 col-form-label"><strong>작성자</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" name="author" class="form-control" id="inputAuthor"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputContent" class="col-sm-2 col-form-label"><strong>내용</strong></label>
+                <div class="col-sm-10">
+                    <textarea type="text" name="content" class="form-control" id="inputContent" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto mr-auto"></div>
+                <div class="col-auto">
+                    <input class="btn btn-outline-info" type="submit" role="button" value="글쓰기"/>
+                </div>
+            </div>
+        </form>
+    </main>
+    <th:block layout:fragment="footer" th:include="@{/common/footer}"></th:block>
+</section>
+
+    <!-- JavaScript -->
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
