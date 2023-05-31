@@ -1,4 +1,4 @@
-package com.modim.newtech.toyproject.board.model;
+package com.modim.newtech.toyproject.community.board.model;
 
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
