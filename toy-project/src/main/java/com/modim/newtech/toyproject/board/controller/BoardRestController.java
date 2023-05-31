@@ -30,12 +30,12 @@ public class BoardRestController {
         return boardService.createBoard(boardDto);
     }
 
-    @PutMapping("/articleId")        // 해당 articleId의 게시글을 수정하는 api
+    @PutMapping("/{articleId}")        // 해당 articleId의 게시글을 수정하는 api
     public Long updateBoard(@PathVariable Long articleId, @RequestBody BoardDto boardDto){
         return boardService.updateBoard(articleId, boardDto);
     }
 
-    @DeleteMapping("/articleId")
+    @DeleteMapping("/{articleId}")
     public void deleteBoard(@PathVariable Long articleId) {
         boardService.deleteBoard(articleId);
     }
