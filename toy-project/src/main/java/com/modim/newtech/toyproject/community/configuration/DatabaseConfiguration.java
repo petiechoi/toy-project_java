@@ -1,4 +1,4 @@
-package com.modim.newtech.toyproject.Board.Configuration;
+package com.modim.newtech.toyproject.community.configuration;
 
 
 import com.zaxxer.hikari.HikariConfig;

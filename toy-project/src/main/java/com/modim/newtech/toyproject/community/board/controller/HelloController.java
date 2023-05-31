@@ -1,4 +1,4 @@
-package com.modim.newtech.toyproject.Board.Controller;
+package com.modim.newtech.toyproject.community.board.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
