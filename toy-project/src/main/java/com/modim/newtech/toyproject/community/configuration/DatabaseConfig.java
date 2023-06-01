@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @PropertySource("classpath:/application.properties")
-public class DatabaseConfiguration {
+public class DatabaseConfig {
     @Bean
     @ConfigurationProperties(prefix="spring.datasource.hikari")
     public HikariConfig hikariConfig() {
