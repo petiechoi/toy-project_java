@@ -25,8 +25,4 @@ public class MemberRestController {
         return memberService.login(memberDto);
     }
 
-    @GetMapping("/hello")
-    public String hello(){
-        return "hello";
-    }
 }
