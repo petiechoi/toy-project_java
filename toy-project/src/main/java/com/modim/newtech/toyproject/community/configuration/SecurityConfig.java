@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)    // 세션을 쓰지 않는다.
                 .and()
                 .authorizeRequests()
-                .antMatchers("/temp").authenticated()       // jwt 테스트용 코드
+                .antMatchers("/community/**").authenticated()       // jwt 테스트용 코드
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 //.antMatchers("/book/**").hasRole("USER")
                 .antMatchers("/**").permitAll()

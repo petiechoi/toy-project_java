@@ -3,15 +3,12 @@ package com.modim.newtech.toyproject.community.member.controller;
 import com.modim.newtech.toyproject.community.member.dto.MemberDto;
 import com.modim.newtech.toyproject.community.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/test")
 public class MemberRestController {
 
     private final MemberService memberService;
@@ -26,5 +23,10 @@ public class MemberRestController {
     @PostMapping("/login")
     public String login(@RequestBody MemberDto memberDto) {
         return memberService.login(memberDto);
+    }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
     }
 }
