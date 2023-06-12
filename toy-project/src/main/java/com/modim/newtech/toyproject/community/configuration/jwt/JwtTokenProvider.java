@@ -24,8 +24,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class JwtTokenProvider {
 
-    //@Value("${jwt.key}")
-    private String key = "VlwEyVBsYt9V7zq57TejMnVUyzblYcfPQye08f7MGVA9XkHa";
+    @Value("${jwt.secret}")
+    private String key;
 
     private final MemberDetailsService memberDetailsService;
     private long tokenValidTime = 30 * 60 * 1000L;     // 토큰 유효시간 30분
