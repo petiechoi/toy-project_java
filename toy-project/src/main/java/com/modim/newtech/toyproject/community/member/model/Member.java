@@ -60,7 +60,7 @@ public class Member implements UserDetails {
 
     @Override
     public String getPassword() {
-        return null;
+        return this.loginPassword;
     }
 
     @Override
