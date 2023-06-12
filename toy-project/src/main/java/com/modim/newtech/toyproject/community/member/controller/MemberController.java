@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequiredArgsConstructor
 public class MemberController {
 
-    @GetMapping("/signup")
+    @GetMapping("/tsignup") // 임시
     public String signup() {
         return "member/signup";
     }
 
-    @GetMapping("/login")
+    @GetMapping("/tlogin")  // 임시
     public String login() {
         return "member/login";
     }
